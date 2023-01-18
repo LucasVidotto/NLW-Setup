@@ -1,16 +1,21 @@
-import { useState } from 'react'
-import Habits from './Components/Habits'
+
 import './Styles/global.css'
-function App() {
-  const [count, setCount] = useState(0)
+import logoImage from './assets/logo.svg'
+export function App() {
+
 
   return (
-    <>
-      <Habits completed={3}/>
-      <Habits completed={13}/>
-      <Habits completed={32}/>
-    </>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-full max-w-5xl px-6 flex flex-col gap-16">
+      
+      <div className="w-full max-w-3xl mx-auto flex items-center justify-between">
+        <img src={logoImage} alt="Imagem Logo" />
+        <button type="button">Novo habito</button>
+      </div>
+
+      </div>
+    </div>
   )
 }
 
-export default App
+
