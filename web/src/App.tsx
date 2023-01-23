@@ -1,6 +1,8 @@
+import './Styles/global.css'
+import './Components/lib/dayjs'
 import { Header } from './Components/Header'
 import { SummeryTable } from './Components/SummaryTable'
-import './Styles/global.css'
+
 
 export function App() {
 
